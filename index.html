@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Giphy Search API</title>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap" rel="stylesheet">
+	<link href='css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+	<header>
+		<div class="companyName">GIPHY Search API</div>
+		<div class="nav">
+			<div class="search">
+				<form class="search-form">
+					<input type="text" id="txtKeywords" placeholder="Enter keywords" class="keywords">
+					<button type="button" id="btnSearch" class="button">Search</button>
+				</form>
+			</div>
+			<a href="#about">About</a>
+			<a href="#contact">Contact</a>
+		</div>
+	</header>
+	<div class="info">
+		<div class="row">
+			<div class="col">GIF Search:</div>
+			<div class="col"><input id="txtGIFSearch" type="text" disabled></div>
+
+		</div>
+		<div class="row">
+			<div class="col">No. of GIF's:</div>
+			<div class="col"><input id="txtNoOfGif" type="text" disabled></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div id="giphy-Holder" class="grid"> </div>
+		<div class="giphy1"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		getGIF();
+	</script>
+
+</body>
+
+</html>
