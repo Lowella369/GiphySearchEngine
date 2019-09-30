@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: #212121;
+  color: white;
+  font-family: Sofia,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 25px;
+  padding-left: 12.5%;
+  padding-right: 12.5%; }
+
+header {
+  display: flex;
+  overflow: auto;
+  background-color: black;
+  padding-top: 100px;
+  padding-bottom: 40px;
+  padding-left: 10px; }
+  header div.companyName {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 450px;
+    font-family: "Kaushan Script", Lobster;
+    text-align: center;
+    color: yellowgreen;
+    text-shadow: 2px 2px 8px white; }
+
+.nav {
+  display: flex;
+  float: right; }
+  .nav a {
+    text-decoration: none;
+    display: block;
+    color: olive;
+    text-align: center;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 15px; }
+  .nav a:hover {
+    background-color: seagreen;
+    color: white; }
+  .nav input[type=text] {
+    font-size: 15px;
+    padding: 10px 18px;
+    background-color: paleturquoise;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color: olive;
+    border: 1px solid lightseagreen;
+    border-radius: 15px;
+    height: 45px;
+    width: 400px; }
+  .nav .search button {
+    float: right;
+    display: block;
+    padding: 10px 18px;
+    margin-right: 16px;
+    background: lightgreen;
+    font-size: 18px;
+    cursor: pointer;
+    color: olive;
+    font-weight: bold;
+    height: 45px;
+    border: 1px solid lightseagreen;
+    border-radius: 15px; }
+  .nav .search button:hover {
+    background-color: seagreen;
+    color: white; }
+
+.info {
+  padding-top: 40px; }
+
+.col {
+  text-align: center; }
+  .col input[type=text] {
+    border: 1px solid lightseagreen;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    font-family: Lobster; }
+
+@media screen and (max-width: 380px) {
+  .nav .search {
+    float: none; }
+  .nav a,
+  .nav input[type=text],
+  .nav .search button {
+    float: left;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 18px; }
+  header,
+  .nav {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 12px; }
+  header div.companyName {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 0px; } }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 5px;
+  padding-top: 2%; }
+  .grid div {
+    background-color: lightgreen;
+    text-align: center; }
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.giphy1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.giphy2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.giphy3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.giphy4 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3; }
+
+.giphy5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5; }
+
+.giphy6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5; }
+
+.giphy7 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5; }
+
+.giphy8 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5; }
+
+.giphy9 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 8; }
+
+.giphy10 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 8; }
+
+.giphy11 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 8; }
+
+.giphy12 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 8; }
