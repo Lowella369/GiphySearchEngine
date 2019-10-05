@@ -1,7 +1,7 @@
 $body-padding: 12.5%;
 $display-flex: flex;
 $align-center: center;
-$nav-padding: 10px 18px;
+$nav-padding: 0.625rem 1.125rem;
 
 * {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body {
   background-color: #212121;
   color: white;
   font-family: Sofia,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 25px;
+  font-weight: 1.5625rem;
   padding-left: $body-padding;
   padding-right: $body-padding;
 }
@@ -20,18 +20,18 @@ header {
   display: $display-flex;
   overflow: auto;
   background-color: black;
-  padding-top: 100px;
-  padding-bottom: 40px;
-  padding-left: 10px;
+  padding-top: 6.25rem;
+  padding-bottom: 2.5rem;
+  padding-left: 0.625rem;
 
   div.companyName {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: bold;
-    padding-right: 450px;
+    padding-right: 28.125rem;
     font-family: "Kaushan Script", Lobster;
     text-align: $align-center;
     color: yellowgreen;
-    text-shadow: 2px 2px 8px white;
+    text-shadow: .2rem .2rem .6rem white;
   }
 }
 
@@ -45,10 +45,10 @@ header {
     color: olive;
     text-align: $align-center;
     padding: $nav-padding;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
-    border: 1px;
-    border-radius: 15px;
+    border: .1rem;
+    border-radius: 1rem;
   }
   
   a:hover {
@@ -62,25 +62,23 @@ header {
     background-color: paleturquoise;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     color: olive;
-    border: 1px solid lightseagreen;
-    border-radius: 15px;
-    height: 45px;
-    width: 400px;
+    border: 0.0625rem solid lightseagreen;
+    height: 2.8125rem;
+    width: 25rem;
   }
   
   .search button {
     float: right;
     display: block;
     padding: $nav-padding;
-    margin-right: 16px;
+    margin-right: 1rem;
     background: lightgreen;
     font-size: 18px;
     cursor: pointer;
     color: olive;
     font-weight: bold;
-    height: 45px;
-    border: 1px solid lightseagreen;
-    border-radius: 15px;
+    height: 2.8125rem;
+    border: 0.0625rem solid lightseagreen;
   }
   
   .search button:hover {
@@ -90,22 +88,28 @@ header {
 }
 
 .info {
-  padding-top: 40px;
-}
-
-.col {
-  text-align: $align-center;
+  display: flex;
+  padding-top: 3rem;
+  padding-left: 25rem;
+  padding-bottom: 4rem; 
+  text-align: center;
 
   input[type=text] {
-    border: 1px solid lightseagreen;
-    border-radius: 15px;
-    width: 250px;
-    text-align: $align-center;
-    font-family: Lobster;
+    text-align: center;
+    width: 15rem;
   }
 }
 
+.col {
+  padding-right: 10rem; 
+}
+
 @media screen and (max-width: 380px) {
+  body {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  
   .nav .search {
     float: none;
   }
@@ -114,10 +118,9 @@ header {
   .nav input[type=text],
   .nav .search button {
     float: left;
-    display: block;
-    text-align: $align-center;
-    width: 100%;
-    margin: 0;
+    display: $display-flex;
+    width: 18rem;
+    margin: 0rem;
     padding: $nav-padding;
   }
 
@@ -126,118 +129,48 @@ header {
     display: block;
     float: left;
     text-align: $align-center;
-    padding: 12px;
+    padding: 0.75rem;
   }
 
   header div.companyName {
     font-size: 25px;
     font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-right: 0px;
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
+    padding-right: 0rem;
   }
 
+  .info {
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    display: block;
+  } 
+
+  .col {
+    padding-right: 0rem; 
+  }
+
+  .row {
+    display: block;
+  }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 5vw);
-  grid-gap: 5px;
-  padding-top: 2%;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 1.25rem;
+  align-items: stretch;
 
   div {
     background-color: lightgreen;
     text-align: center;
   }
-}
 
-.img {
-  width: 100%;
-  height: 100%;
+  img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+    width: 100%;
   object-fit: cover;
-}
-
-.giphy1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.giphy2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.giphy3 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.giphy4 {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.giphy5 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-.giphy6 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-.giphy7 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-.giphy8 {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 3;
-  grid-row-end: 5;
-}
-
-.giphy9 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 8;
-}
-
-.giphy10 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 8;
-}
-
-.giphy11 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 5;
-  grid-row-end: 8;
-}
-
-.giphy12 {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 5;
-  grid-row-end: 8;
+  }
 }
