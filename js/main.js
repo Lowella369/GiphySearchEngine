@@ -1,11 +1,10 @@
-function getGIF()
-{
-	var gridStyle;
+function getGIF() {
+	
 	$('#txtGIFSearch').val('');
 	$('#txtNoOfGif').val('');
 
 	$('#btnSearch').click(function () {
-		gridStyle = 0;
+		$('#giphy-Holder').empty();
 		var inputKeywords = $('#txtKeywords').val().trim();
 
 		$('#txtGIFSearch').val(inputKeywords);
@@ -18,13 +17,8 @@ function getGIF()
 			for (var x = 0; x < response.data.length; x++) {
 
 				var imageURL = response.data[x].images.fixed_height.url;
-				gridStyle += 1;
-				var htmlTxt =
-					'<div class="giphy' + gridStyle + '">' +
-					'<img id=' + x + ' src="' + imageURL + '" class="img">'
-				'</div>';
 
-				$('#giphy-Holder').append(htmlTxt);
+				$('#giphy-Holder').append('<img src="' + imageURL + '" ></img>');
 			}
 
 		});
@@ -32,12 +26,6 @@ function getGIF()
 		$('#txtKeywords').val('Enter keywords');
 
 	});
-
-	$('#giphy-Holder').easyPaginate({
-		paginateElement: 'img',
-		elementsPerPage: 2,
-		effect: 'climb'
-	});
 }
-	
+
 
