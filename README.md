@@ -9,9 +9,7 @@
 2.	Hit the search button
 3.	GIFs will be displayed on the page
 
-**Technologies Used:** JQuery, CSS,  
+**Technologies Used:** HTML, JQuery, CSS, Javascript, Bootstrap 4
 
 **Future Improvement:**
 1. Need to add html page and link for About and Contact page
-2. Need to add footer
-3. The number of limit of the gif that will be returned from the query should be more than 12 gifs and add pagination to the page.
