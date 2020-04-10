@@ -1,52 +1,64 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Giphy Search Engine</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body onload="gitGIF()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Giphy Search API</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" id="txtKeywords" type="search" placeholder="Enter keywords">
+          <button id="btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="body-container">
+      <div class="info">
+        <div class="row">
+          <div class="col">GIF Search:</div>
+          <div class="col"><input id="txtGIFSearch" type="text" disabled placeholder=""></div>
+        </div>
 
-<head>
-	<title>Giphy Search API</title>
-	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap" rel="stylesheet">
-	<link href='css/style.css' rel='stylesheet'>
-</head>
+        <div class="row">
+          <div class="col">No. of GIF's:</div>
+          <div class="col"><input id="txtNoOfGif" type="text" disabled placeholder=""></div>
+        </div>
+      </div>
 
-<body>
-	<header>
-		<div class="companyName">GIPHY Search API</div>
-		<div class="nav">
-			<div class="search">
-				<form class="search-form">
-					<input type="text" id="txtKeywords" placeholder="Enter keywords" class="keywords">
-					<button type="button" id="btnSearch" class="button">Search</button>
-				</form>
-			</div>
-			<a href="#about">About</a>
-			<a href="#contact">Contact</a>
-		</div>
-	</header>
-	<div class="info">
-		<div class="row">
-			<div class="col">GIF Search:</div>
-			<div class="col"><input id="txtGIFSearch" type="text" disabled placeholder=""></div>
+      <div class="flex-container">
+        <div id="giphy-Holder" class="grid">
 
-		</div>
-		<div class="row">
-			<div class="col">No. of GIF's:</div>
-			<div class="col"><input id="txtNoOfGif" type="text" disabled placeholder=""></div>
-		</div>
-	</div>
+        </div>
+      </div>
+    </div>
 
-	<div class="row">
-		<div id="giphy-Holder" class="grid"> </div>
-		<div class="giphy1"></div>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/main.js"></script>
-
-	<script>
-		getGIF();
-	</script>
-
-</body>
-
+    <script src="js/main.js"></script>
+	  <script>
+		  getGIF();
+	  </script>
+    
+    <div class="footer">
+      <h7>Copyright Lowella Fox 2020</h7>
+    </div>
+  </body>
 </html>
