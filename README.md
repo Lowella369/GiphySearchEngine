@@ -2,15 +2,19 @@
 
 **Name: Lowella Fox**
 
-**Description:** Giphy Search API is our 2nd Web Project in Full Stack Web Development Bootcamp. That will allow user to enter and submit a keyword and then makes a request to the Giphy API based on that keyword, receives and parses the response and displays images on the page from that response. This page is also responsive that it looks good and works well on both desktop and mobile devices. However, there is a limit of 12 number of gifs that will only be displayed on this page.  And the About and Contact nav bar is not working at this moment, I just put it there to comply with the requirements.
-**Functionality:** 
-1.	User will enter keyword to the input box
-2.	Hit the search button
-3.	GIFs will be displayed on the page
+**Description:** Giphy Search API is an application that will allow user to enter and submit a keyword and then makes a request to the Giphy API based on that keyword, receives and parses the response and displays images on the page from that response. This page is also responsive that it looks good and works well on both desktop and mobile devices. Please take note, the About and Contact nav bar is not working at this moment, I just put it there to comply with the requirements.
 
-**Technologies Used:** JQuery, CSS,  
+Link: https://lowella369.github.io/GiphySearchEngine/
+
+**Functionality:** 
+1.  User loads the page and the default images will be displayed.
+2.	User will enter keyword to the input box
+3.	Hit the search button
+4.	GIFs will be displayed on the page
+
+**Technologies Used:** HTML, JQuery, CSS, Javascript, Bootstrap 4
 
 **Future Improvement:**
 1. Need to add html page and link for About and Contact page
-2. Need to add footer
-3. The number of limit of the gif that will be returned from the query should be more than 12 gifs and add pagination to the page.
+2. Need to add options like what category of gif you would like to search.
+3. Need to have login link and page.
