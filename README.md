@@ -7,7 +7,7 @@
 Link: https://lowella369.github.io/GiphySearchEngine/
 
 **Functionality:** 
-1.  User load the pages and the default images will be displayed on the page.
+1.  User loads the page and the default images will be displayed.
 2.	User will enter keyword to the input box
 3.	Hit the search button
 4.	GIFs will be displayed on the page
