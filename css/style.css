@@ -1,28 +1,28 @@
-* {
-  box-sizing: border-box; }
-
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap");
 body {
   padding-left: 5rem;
-  padding-right: 5rem;
-  background-color: black; }
+  padding-right: 5rem; }
 
 .navbar {
   margin-top: 3rem; }
 
 .navbar-brand {
   font-family: "Kaushan Script", Sofia;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: white; }
 
 .body-container {
-  color: white; }
+  color: white;
+  padding-bottom: 3rem; }
 
 .info {
   padding-top: 2rem; }
 
 .flex-container {
   margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 5rem; }
+  padding-top: 2rem; }
 
 .gif {
   max-width: 100%; }
@@ -33,28 +33,22 @@ body {
   width: 50rem; }
 
 .footer {
-  padding: 2rem 0 2rem;
+  padding: 1rem 0 1rem;
   border-top: solid dimgray;
-  font-family: Lobster;
-  color: white;
-  text-align: center; }
+  color: black;
+  text-align: center;
+  font-size: 1rem; }
 
 @media screen and (min-width: 600px) {
   .grid {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; } }
-
-@media screen and (min-width: 1000px) {
+    flex-direction: row; }
   .giphy1 {
-    width: calc(100% / 3); } }
+    width: 100%; } }
 
 .giphy1 {
   margin: 1rem; }
-
-@media screen and (min-width: 600px) {
-  .giphy1 {
-    width: calc(50% - 2rem); } }
 
 @media screen and (min-width: 1000px) {
   .giphy1 {
