@@ -1,0 +1,4 @@
+# Ignore all jpg files
+
+#Ignore all doc files
+*.docx
