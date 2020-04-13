@@ -1,0 +1,7 @@
+1.  As a user, 
+    I want to load the Giphy Search Engine page,
+    So that I can see some adorable default gif images.
+
+2. As a user,
+   I want to type in a search phrase and submit keywords,
+   So that I can see the corresponding gif images based on that search phrase.
