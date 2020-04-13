@@ -1,3 +1,7 @@
+Giphy Search Engine
+
+User Stories:
+
 1.  As a user, 
     I want to load the Giphy Search Engine page,
     So that I can see some adorable default gif images.
