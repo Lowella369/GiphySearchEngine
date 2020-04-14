@@ -5,6 +5,7 @@
 **Description:** Giphy Search API is an application that will allow user to enter and submit a keyword and then makes a request to the Giphy API based on that keyword, receives and parses the response and displays images on the page from that response. This page is also responsive that it looks good and works well on both desktop and mobile devices. 
 
 Note: The About and Contact nav bar is not working at this moment.
+
 Link: https://lowella369.github.io/GiphySearchEngine/
 
 **Functionality:** 
