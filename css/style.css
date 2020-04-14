@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Sofia");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap");
-body {
-  padding-left: 5rem;
-  padding-right: 5rem; }
-
 .navbar {
-  margin-top: 3rem; }
+  margin-top: 0; }
 
 .navbar-brand {
   font-family: "Kaushan Script", Sofia;
@@ -28,9 +24,11 @@ body {
   max-width: 100%; }
 
 .giphy1 img {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   height: 20rem;
-  width: 50rem; }
+  width: 100%; }
 
 .footer {
   padding: 1rem 0 1rem;
@@ -40,6 +38,8 @@ body {
   font-size: 1rem; }
 
 @media screen and (min-width: 600px) {
+  body {
+    padding: 0; }
   .grid {
     display: flex;
     flex-wrap: wrap;
@@ -52,4 +52,9 @@ body {
 
 @media screen and (min-width: 1000px) {
   .giphy1 {
-    width: calc(25% - 2rem); } }
+    width: calc(25% - 2rem); }
+  body {
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  .navbar {
+    margin-top: 3rem; } }
