@@ -33,5 +33,5 @@ $(document).ready(function() {
 			displayGIF(inputKeywords);
 		}
 	}
-	displayGIF('butterfly')
+	displayGIF('mickey')
 });
