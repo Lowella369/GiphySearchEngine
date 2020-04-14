@@ -5,69 +5,68 @@
 $body-padding: 5rem;
 $padding-top: 2rem;
 
-body {
-  padding-left: $body-padding;
-  padding-right: $body-padding;
-}
-
 .navbar {
-  margin-top: 3rem;
-}
+  margin-top: 0; }
 
 .navbar-brand {
   font-family: "Kaushan Script", Sofia;
   font-size: 1.5rem;
-  color: white;
-}
+  color: white; }
 
 .body-container {
   color: white;
-  padding-bottom: 3rem;
-}
+  padding-bottom: 3rem; }
 
 .info {
-  padding-top: $padding-top; 
-}
+  padding-top: $padding-top; }
 
 .flex-container {
   margin: 0 auto;
-  padding-top: $padding-top; 
-}
+  padding-top: $padding-top; }
 
 .gif {
-  max-width: 100%; 
-}
+  max-width: 100%; }
 
 .giphy1 img {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   height: 20rem;
-  width: 50rem; 
-}
+  width: 100%;}
 
 .footer {
   padding: 1rem 0 1rem;
   border-top: solid dimgray;
   color: black;
   text-align: center;
-  font-size: 1rem;
- }
+  font-size: 1rem; }
 
 @media screen and (min-width: 600px) {
+  body {
+    padding: 0;
+  }
+
   .grid {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row; } 
+    flex-direction: row; }
+
   .giphy1 {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
 .giphy1 {
-  margin: 1rem; 
-}
+  margin: 1rem; }
 
 @media screen and (min-width: 1000px) {
   .giphy1 {
     width: calc(25% - 2rem); } 
-}
 
+  body {
+    padding-left: $body-padding;
+    padding-right: $body-padding;
+  }
+
+  .navbar {
+    margin-top: 3rem;
+  }
+}
